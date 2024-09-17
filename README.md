@@ -3,9 +3,9 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-a. Small input sizes are ignored. An algorithm that is 'faster' may actually be slower with a smaller input size.
+a. If 'Machine A' is faster but runs a more inefficient program than 'Machine B', the program on 'Machine B' could finish sooner. Run time and performance in practice is not solely dictated by asymptotic analysis.
   
-b.There is a worst case, best case, and average case. Asymptotic analysis may show that quicksort would be faster than mergesort, but if each have their 'worst case', then mergesort will actually be faster.
+b. As an example, Big O covers the upper bound. So an algorithm that has a time complexity of O(n!), could also have a time complexity of O(n<sup>2</sup>), or O(n), so on. If your algorithm has a time complexity of O(n!), all that's said is it can grow no faster than O(n!). It could have a different run time in a real life application, as long as it is below O(n!).
 
 c. Something I noticed that is similar to the calculus classes that I have taken, is that lower order terms are dropped during some operations. When terms are dropped while finding time complexity of an algorithm, it makes sense in theory but when you go to run your program, you might get something that is not at all what you expected.
   
@@ -24,11 +24,11 @@ If you divide $$\frac{13.28}{9.96}$$, you get 1.3. This means that a finding an 
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
-a. The tree could be unbalanced. If it is in its worst case, it will have to traverse every element like a linked list. This would be $O(n)$ time, slowing the search down significantly.
+a. 
 
-b. Asymptotic analysis does not account for the machine it is being ran on. If your machine is outdated or just does not have a lot of resources, you will have run time issues.
+b. 
 
-c. As I said earlier, about lower order terms being dropped, this could show some issues in run time. A perfect implementation of the data structure would suggest that the run time would be a certain value. However if you go through your code and analyze the time complexity line by line, it very well could be off from what you believed originally.
+c. 
 
 Add your answers to this markdown file.
 
