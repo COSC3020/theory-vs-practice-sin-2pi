@@ -3,7 +3,7 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
   
-a. On the 'Average Case Running Time' graph in the sorting lecture slides, you can compare 'Timsort' and 'Heapsort'. For n under ~80,000, Timsort is faster than Heapsort. Then Heapsort jumps above Timsort and as they continue to grow, they even out and are very similar as n approached infinity. While they grow the same as they are approaching large sizes of n, for a more realistic size of n, one algorithm would be faster than the other.
+a. On the 'Average Case Running Time' graph in the sorting lecture slides, you can compare 'Timsort' and 'Heapsort'. For n under ~80,000, Timsort is faster than Heapsort. Then Heapsort jumps above Timsort and as they continue to grow, they even out and are very similar as n approaches infinity. While they grow the same as they are approaching large sizes of n, for a more realistic size of n, Timsort would grow faster than the other. Growth of an algorithm isn't always an accurate representation of the speed of execution in practice, but in general if an algorithm grows faster it will be slower. When you take more steps to get to your result, speed suffers.
   
 b. As an example, Big O covers the upper bound. So an algorithm that has a time complexity of O(n!), could also have a time complexity of O(n<sup>2</sup>), or O(n), so on. If your algorithm has a time complexity of O(n!), all that's said is it can grow no faster than O(n!). It could have a different run time in a real life application, as long as it is below O(n!).
 
